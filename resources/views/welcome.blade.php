@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lara Dash</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/tailwind.output.css') }}" />
+    <link href="{{ asset('css/css2.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/tailwind.output.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('css/Chart.min.css') }}" rel="stylesheet"/>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/charts-bars.js') }}"></script>
+    <script src="{{ asset('js/charts-lines.js') }}"></script>
+    <script src="{{ asset('js/charts-pie.js') }}"></script>
+    <script src="{{ asset('js/charts-trap.js') }}"></script>
     <script src="{{ asset('js/init-alpine.js') }}"></script>
-    <script src=" {{ asset('js/charts-lines.js') }}" defer></script>
-    <script src="{{ asset('js/assets/js/charts-pie.js') }}" defer></script>
-    <script src="{{ asset('js/assets/js/charts-pie.js') }}" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"defer ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"  defer ></script>
+    <script src="{{ asset('js/Chart.min.js') }}"></script>
+    <script src="{{ asset('js/alpine.min.js') }}"></script>
   </head>
   <body>
     <div
