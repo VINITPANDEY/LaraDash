@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view ('/home','dashboard/home')->middleware('auth');
+Route::view ('/home','dashboard/dashboard')->middleware('auth');

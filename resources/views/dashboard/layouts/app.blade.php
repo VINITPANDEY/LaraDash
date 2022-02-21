@@ -813,6 +813,10 @@
                           ></path>
                         </svg>
                         <span>Log out</span>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
                       </a>
                     </li>
                   </ul>
@@ -827,12 +831,8 @@
               class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
             >
 
-            @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-              Dashboard
+            @yield('content')
+
             </h2>
           </div>
         </main>
