@@ -40,7 +40,7 @@
           <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
               
-              <form action = "{{ route('auth.check') }}" method = "post">
+                <form method="POST" action="{{ route('login') }}">
                 @if(Session::get('success'))
                 <div class="p-4 mb-4 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
                   <span class="font-medium">Success</span> {{ Session::get('success') }}.
@@ -53,7 +53,8 @@
                 </div>
                 @endif
 
-                @csrf         
+                @csrf  
+                
                 <h1 class="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">Login</h1>
                 <label class="block text-sm">
                   <span class="text-gray-700 dark:text-gray-400">Email</span>
@@ -127,7 +128,7 @@
               <p class="mt-1">
                 <a
                   class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
-                  href="{{ route('auth.registrer') }}"
+                  href=""
                 >
                   Create account
                 </a>
